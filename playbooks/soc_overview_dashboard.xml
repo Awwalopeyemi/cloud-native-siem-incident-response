@@ -1,0 +1,27 @@
+<dashboard version="1.1" theme="dark">
+  <label>Enterprise SOC Overview &amp; Threat Monitoring</label>
+  <row>
+    <panel>
+      <title>Failed Logons (Brute-Force Tracking - Event 4625)</title>
+      <table>
+        <search>
+          <query>index=main EventCode=4625 | stats count by Account_Name, Client_Computer_Name | sort -count</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="display.drilldown">none</option>
+      </table>
+    </panel>
+    <panel>
+      <title>Critical Security Alerts (Audit Log Cleared - Event 1102)</title>
+      <table>
+        <search>
+          <query>index=main EventCode=1102 | table _time, host, Signature, user</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="display.drilldown">none</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>
