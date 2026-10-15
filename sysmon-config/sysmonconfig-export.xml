@@ -8,6 +8,7 @@
   Fork author:	<N/A>
   Fork project:	<N/A>
   Fork license:	<N/A>
+  Updated forked author: Surajudeen Muhamad Awwal
 
   REQUIRED: Sysmon version 13 or higher (due to changes in syntax and bug-fixes)
 	https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
