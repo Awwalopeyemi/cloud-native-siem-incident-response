@@ -1,8 +1,6 @@
 
 ## Repository Organization Strategy
 
-When you flatten your folder structure, keep these folders at the top level of `cloud-native-siem-incident-response` so hiring managers and recruiters can navigate your portfolio easily:
-
 ```text
 cloud-native-siem-incident-response/
 ├── README.md
