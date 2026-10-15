@@ -1,6 +1,6 @@
 import datetime
 
-# Simulated sign-in telemetry that mattches our KQL detection parameters
+# Simulated sign-in telemetry that matches my KQL detection parameters
 mock_logs = [
     {"time": datetime.datetime(2026, 10, 13, 8, 0), "user": "alice@company.com", "ip": "192.0.2.1", "result": 50125},
     {"time": datetime.datetime(2026, 10, 13, 8, 1), "user": "alice@company.com", "ip": "203.0.113.5", "result": 50125},
